@@ -3,8 +3,10 @@ package test_fonctionnel;
 import personnages.Gaulois;
 import personnages.Romain;
 
-public class TestGaulois {
-	public static void main(String[] args) {
+public class TestGaulois 
+{
+	public static void main(String[] args) 
+	{
 		Gaulois asterix = new Gaulois(8,"Astérix");
 		System.out.println(asterix.getName());
 		asterix.parler("Bonjour à tous ");
@@ -16,7 +18,7 @@ public class TestGaulois {
 		}*/
 		for(int i = 0;i<3;i++)
 		{
-			asterix.frapper(minus)
+			asterix.frapper(minus);
 		}
 	}
 }
