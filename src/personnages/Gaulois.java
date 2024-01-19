@@ -1,14 +1,14 @@
 package personnages;
 
-public class gaulois {
+public class Gaulois {
 	private int force;
 	private String name; 
-	public gaulois(int force, String name) 
+	public Gaulois(int force, String name) 
 	{
 		this.force = force;
 		this.name = name;
 	}
-	public String getGaulois()
+	public String getName()
 	{
 		return(name);
 	}
