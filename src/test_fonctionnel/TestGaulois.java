@@ -13,17 +13,42 @@ public class TestGaulois
 		Gaulois vercingetorix = new Gaulois(5,"Vercingétorix");
 		Village village = new Village(vercingetorix);
 		
+		System.out.println(""); 
 		Gaulois agecanonix = new Gaulois(1,"Agecanonix");
 		Gaulois assurancetourix = new Gaulois(2,"Assurancetourix");
 		Gaulois asterix = new Gaulois(5,"Astérix");
 		Gaulois obelix = new Gaulois(5,"Ostérix");
-		Gaulois prolix = new Gaulois(5,"Astérix");
+		Gaulois prolix = new Gaulois(5,"Prolix");
+		Gaulois abrara = new Gaulois(5,"Abraracourcix");
 		
 		Soldat brutus = new Soldat(5,"Brutus",Grade.CENTURION);
 		Soldat milexcus = new Soldat(2,"Milexcus",Grade.SOLDAT);
-		Soldat tullius = new Soldat(2,"Tullius Octopus",Grade.OPTIO);
+		Soldat tullius = new Soldat(2,"Tullius Octopus",Grade.TESSERARIUS);
+		Soldat ballon = new Soldat(3,"Ballondebaudrus",Grade.OPTIO);
+		Soldat briseradius = new Soldat(4,"Briseradius",Grade.SOLDAT);
+		Soldat chorus = new Soldat(4 ,"Chorus",Grade.CENTURION);
+		camp.ajouterSoldat(brutus);
+		camp.ajouterSoldat(milexcus);
+		camp.ajouterSoldat(tullius);
+		camp.ajouterSoldat(ballon);
+		System.out.println("");
+		village.ajouterVillageois(agecanonix);
+		village.ajouterVillageois(assurancetourix);
+		village.ajouterVillageois(asterix);
+		village.ajouterVillageois(obelix);
+		village.ajouterVillageois(prolix);
 		
-		camp.ajouterSoldat(Soldat soldat);
+		village.afficherVillageois();
+		camp.afficherCamp();
+		
+		village.changerChef(abrara);
+		
+		System.out.println("");
+		System.out.println("AFFICHAGE ATTENDU :");
+		camp.changerCommandant(briseradius);
+		camp.changerCommandant(chorus);
+		
+		//camp.ajouterSoldat(Soldat soldat);
 		
 		/*
 		Gaulois asterix = new Gaulois(8,"Astérix");
