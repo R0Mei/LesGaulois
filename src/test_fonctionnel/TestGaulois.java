@@ -7,6 +7,7 @@ public class TestGaulois
 {
 	public static void main(String[] args) 
 	{
+
 		Soldat minus = new Soldat(2,"Minus",Grade.SOLDAT);
 		Camp camp = new Camp(minus);
 		
@@ -17,7 +18,7 @@ public class TestGaulois
 		Gaulois agecanonix = new Gaulois(1,"Agecanonix");
 		Gaulois assurancetourix = new Gaulois(2,"Assurancetourix");
 		Gaulois asterix = new Gaulois(5,"Astérix");
-		Gaulois obelix = new Gaulois(5,"Ostérix");
+		Gaulois obelix = new Gaulois(5,"Obélix");
 		Gaulois prolix = new Gaulois(5,"Prolix");
 		Gaulois abrara = new Gaulois(5,"Abraracourcix");
 		
@@ -47,24 +48,22 @@ public class TestGaulois
 		System.out.println("AFFICHAGE ATTENDU :");
 		camp.changerCommandant(briseradius);
 		camp.changerCommandant(chorus);
+		System.out.println("");
+		Druide panoramix = new Druide(1,"Panoramix");
+		panoramix.fabricationPotion(3);
 		
-		//camp.ajouterSoldat(Soldat soldat);
-		
-		/*
-		Gaulois asterix = new Gaulois(8,"Astérix");
+		asterix.glouglou(panoramix);
+		obelix.glouglou(panoramix);
+		assurancetourix.glouglou(panoramix);
+		abrara.glouglou(panoramix);
+		agecanonix.glouglou(panoramix);
 		asterix.parler("Bonjour à  tous ");
-		
+		System.out.println(""); 
 		minus.parler("UN GAU... UN GAUGAU...");
-		for(int i = 0;i<2;i++)
-		{
-			minus.recevoirCoup(3);
-		}
 		for(int i = 0;i<2	;i++)
 		{
 			asterix.frapper(minus);
 			minus.frapper(asterix);
 		}
-		asterix.frapper(minus);
-		*/
 	}
 }

@@ -10,4 +10,13 @@ public class Romain extends Personnages
 	{
 		return ("romain");
 	}
+	public void equipement() {
+		
+	}
+	public void frapper(Personnages adversaire)
+	{
+
+		System.out.println("Le "+donnerAuteur()+" "+getName()+" envoie un grand coup d'une puissance de "+this.force/3+" dans la machoire de "+adversaire.getName()+".");
+		adversaire.recevoirCoup(this.force/3);
+	}
 }
